@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: rgb(255, 255, 255);
+    background-image: url(https://img.freepik.com/fotos-premium/padrao-de-marmore-natural-para-o-fundo_1258-22162.jpg);
+    background-repeat: no-repeat;
+    background-size: 4000px;
+    max-width: 450px;
+    width: 98vw;
+    margin: auto;
+    text-align: center;
+}
+
+table { 
+    border-collapse: collapse;
+
+}
+th, td {
+    border: 1px solid rgb(255, 255, 255);
+    padding-inline: 2px;
+    font-size: 0.9em;
+    
+}
+
+.ser, .rep, .rest {
+    width: auto;
+
+    
+}
+.ex {
+    width: 98vw;
+}
+button {
+    max-width: 450px;
+    margin: 5px auto auto auto;
+    font-weight: bold;
+    width: 98vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(83, 83, 83);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+       
+}
+button:hover {
+    color: rgb(167, 167, 167)ed;
+    background-color: rgb(43, 43, 43);
+    
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(167, 167, 167);
+    text-decoration: underline;
+}
+p {
+    padding-top: 10px;
+}
+
+
+#treinoa {
+    width: auto;
+    max-height: 0em;
+    background-color: rgb(43, 43, 43);
+    transition: all .5s ease;
+
+}
+#treinoa.show {
+    
+    max-height: 14em;
+    
+}
+
+#treinob {
+    width: auto;
+    max-height: 0;
+    background-color: rgb(43, 43, 43);
+    transition: all .5s ease;
+
+}
+#treinob.show {
+    
+    max-height: 14em;
+    
+}
+
+#treinoc {
+    width: auto;
+    max-height: 0;
+    background-color: rgb(43, 43, 43);
+    transition: all .5s ease;
+
+}
+#treinoc.show {
+    
+    max-height: 14em;
+    
+}
+#treinod {
+    width: auto;
+    max-height: 0;
+    background-color: rgb(43, 43, 43);
+    transition: all .5s ease;
+
+}
+#treinod.show {
+    
+    max-height: 14em;
+    
+}
+
+#treinoe {
+    width: auto;
+    max-height: 0;
+    background-color: rgb(43, 43, 43);
+    transition: all .5s ease;
+
+}
+#treinoe.show {
+    
+    max-height: 14em;
+    
+    
+}
+
+#treinof {
+    width: auto;
+    max-height: 0;
+    background-color: rgb(43, 43, 43);
+    transition: all .5s ease;
+
+}
+#treinof.show {
+    
+    max-height: 14em;
+    
+}
+
+
+div {
+    overflow: hidden;
+}
+
+p {
+    font-size: 1.3em;
+}
