@@ -1,28 +1,33 @@
 @charset "UTF-8";
 
 * {
-    margin: 0;
+    text-align: center;
+    margin: auto;
     padding: 0;
+}
+h1 {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+    color: rgb(209, 0, 0);
+    -webkit-text-stroke: 1px rgb(255, 243, 243);
 }
 
 body {
-    color: rgb(255, 255, 255);
-    background-image: url(https://img.freepik.com/fotos-premium/padrao-de-marmore-natural-para-o-fundo_1258-22162.jpg);
+    color: rgb(209, 0, 0);
+    background-image: url("../treino-natividade/imagens/lion.jpg");
+    background-position: top center;
     background-repeat: no-repeat;
-    background-size: 4000px;
+    background-size: auto;
     max-width: 450px;
     width: 98vw;
-    margin: auto;
-    text-align: center;
 }
 
 table { 
     border-collapse: collapse;
-    
 
 }
 th, td {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(196, 196, 196);
     padding-inline: 2px;
     font-size: 0.9em;
     
@@ -41,115 +46,88 @@ button {
     margin: 5px auto auto auto;
     font-weight: bold;
     width: 98vw;
-    color: rgb(255, 255, 255);
-    background-color: rgb(83, 83, 83);
-    border: 1px solid rgb(255, 255, 255);
+    color: rgb(209, 0, 0);
+    background-color: rgba(0, 0, 0, 0.61);
+    border: 1px solid rgb(209, 0, 0);
     border-radius: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
        
 }
 button:hover {
-    color: rgb(167, 167, 167)ed;
-    background-color: rgb(43, 43, 43);
+    color: rgb(255, 255, 255)ed;
+    background-color: rgba(54, 54, 54, 0.616);
+    border: 1px solid rgb(196, 196, 196);
     
 }
 a {
-    color: rgb(255, 255, 255);
+    color: rgb(209, 0, 0);
     text-decoration: none;
 }
 a:hover {
-    color: rgb(167, 167, 167);
-    text-decoration: underline;
+    color: rgb(255, 122, 122);
+    text-decoration: double;
 }
 p {
     padding-top: 10px;
 }
 
-
-#treinoa {
-    width: auto;
-    max-height: 0em;
-    background-color: rgb(43, 43, 43);
-    transition: all .5s ease;
-
-}
-#treinoa.show {
-    
-    max-height: 20em;
-    
+#myIframe {
+    overflow: hidden;
+    border: none;
+    width: 100%;
+    height: 100%;
 }
 
-#treinob {
-    width: auto;
-    max-height: 0;
-    background-color: rgb(43, 43, 43);
-    transition: all .5s ease;
-
-}
-#treinob.show {
-    
-    max-height: 14em;
-    
-}
-
-#treinoc {
-    width: auto;
-    max-height: 0;
-    background-color: rgb(43, 43, 43);
-    transition: all .5s ease;
-
-}
-#treinoc.show {
-    
-    max-height: 14em;
-    
-}
-#treinod {
-    width: auto;
-    max-height: 0;
-    background-color: rgb(43, 43, 43);
-    transition: all .5s ease;
-
-}
-#treinod.show {
-    
-    max-height: 14em;
-    
-}
-
-#treinoe {
-    width: auto;
-    max-height: 0;
-    background-color: rgb(43, 43, 43);
-    transition: all .5s ease;
-
-}
-#treinoe.show {
-    
-    max-height: 14em;
-    
-    
-}
-
-#treinof {
-    width: auto;
-    max-height: 0;
-    background-color: rgb(43, 43, 43);
-    transition: all .5s ease;
-
-}
-#treinof.show {
-    
-    max-height: 14em;
-    
-}
-
-
-div {
+#div.show {
+    height: 360px;
+    transition: height .5s ease;
     overflow: hidden;
 }
 
+/* Ajustes para a div do iframe */
+#div {
+    height: 0px;
+    border-radius: 10px;
+    margin: auto auto auto auto;
+    max-width: 360px;
+    /*height: 360px;*/
+    transition: height .5s ease;
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse o container */
+}
+
+/* Estilo das tabelas */
+#treinoa,
+#treinob,
+#treinoc,
+#treinod,
+#treinoe {
+    width: auto;
+    max-height: 0;
+    background-color: rgba(0, 0, 0, 0.541);
+    transition: max-height .5s ease;
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse o container */
+}
+
+#treinoa.show,
+#treinob.show,
+#treinoc.show,
+#treinod.show,
+#treinoe.show {
+    max-height: 22em;
+}
+
 p {
-    font-size: 1.3em;
+    color: white;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+#par {
+    border-radius: 5px;
+    width: max-content;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding: 3px;
+    background-color: rgba(255, 0, 0, 0.644);
 }
